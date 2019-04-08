@@ -1,2 +1,2 @@
-# senti-gateway
+# Senti Gateway
 Senti Gateway Service
