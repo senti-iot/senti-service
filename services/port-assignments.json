@@ -1,0 +1,18 @@
+{
+	"api": {
+		"production": "3001",
+		"development": "3002"
+	},
+	"messagebroker": {
+		"production": "3003",
+		"development": "3004"
+	},
+	"databroker": {
+		"production": "3005",
+		"development": "3006"
+	},
+	"gateway": {
+		"production": "3007",
+		"development": "3008"
+	}
+}
