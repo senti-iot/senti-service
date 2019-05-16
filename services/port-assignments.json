@@ -18,5 +18,9 @@
 	"engine": {
 		"production": "3009",
 		"development": "3010"
+	},
+	"cloudfunctions": {
+		"production": "3011",
+		"development": "3012"
 	}
 }
