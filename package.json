@@ -1,6 +1,6 @@
 {
 	"name": "gateway",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"deprecated": false,
 	"description": "Senti Gateway service",
 	"main": "server.js",
@@ -33,7 +33,7 @@
 	"dependencies": {
 		"apisauce": "^1.0.2",
 		"cors": "^2.8.5",
-		"dotenv": "^6.2.0",
+		"dotenv": "^8.0.0",
 		"express": "^4.16.4",
 		"express-pino-logger": "^4.0.0",
 		"find-config": "^1.0.0",
