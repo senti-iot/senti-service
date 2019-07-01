@@ -22,5 +22,9 @@
 	"cloudfunctions": {
 		"production": "3011",
 		"development": "3012"
+	},
+	"subscriptions": {
+		"production": "3013",
+		"development": "3014"
 	}
 }
