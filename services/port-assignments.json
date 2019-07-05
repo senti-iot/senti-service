@@ -26,5 +26,9 @@
 	"subscriptions": {
 		"production": "3013",
 		"development": "3014"
+	},
+	"logger": {
+		"production": "3015",
+		"development": "3016"
 	}
 }
