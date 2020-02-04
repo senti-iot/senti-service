@@ -30,5 +30,25 @@
 	"datarequest": {
 		"production": "3015",
 		"development": "3016"
+	},
+	"externalAPI": {
+		"production": "3017",
+		"development": "3018"
+	},
+	"logger": {
+		"production": "3019",
+		"development": "3020"
+	},
+	"export": {
+		"production": "3021",
+		"development": "3022"
+	},
+	"core": {
+		"production": "3023",
+		"development": "3024"
+	},
+	"climaid": {
+		"production": "3025",
+		"development": "3026"
 	}
 }

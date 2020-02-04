@@ -1,5 +1,9 @@
 #!/usr/bin/env nodejs
+process.title = "senti_gateway"
 const dotenv = require('dotenv').config()
+if (dotenv.error) {
+	console.warn(dotenv.error)
+}
 const express = require('express')
 const cors = require('cors')
 const helmet = require('helmet')
