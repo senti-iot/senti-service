@@ -50,5 +50,9 @@
 	"climaid": {
 		"production": "3025",
 		"development": "3026"
+	},
+	"eventbroker": {
+		"production": "3027",
+		"development": "3028"
 	}
 }
