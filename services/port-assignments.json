@@ -54,5 +54,10 @@
 	"eventbroker": {
 		"production": "3027",
 		"development": "3028"
+	},
+	"waterworks-backend": {
+		"production": "3029",
+		"development": "3030"
 	}
+
 }
