@@ -58,6 +58,9 @@
 	"waterworks-backend": {
 		"production": "3029",
 		"development": "3030"
+	},
+	"newsec-backend": {
+		"production": "3031",
+		"development": "3032"
 	}
-
 }
