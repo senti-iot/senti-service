@@ -62,5 +62,9 @@
 	"newsec-backend": {
 		"production": "3031",
 		"development": "3032"
+	},
+	"camro-backend": {
+		"production": "3033",
+		"development": "3034"
 	}
 }
