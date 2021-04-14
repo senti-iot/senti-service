@@ -4,7 +4,8 @@
 if [[ "$1" == "master" ]]; then
 	npm install --prefix /srv/nodejs/senti/services/template/production
 	systemctl restart senti-template.service
-	logtext=$( systemctl status senti-template-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
+	sleep 5
+	logtext=$( systemctl status senti-template | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
 	# Senti Slack Workspace
 	curl -X POST -H 'Content-type: application/json' --data '{
 	"blocks": [
