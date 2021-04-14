@@ -1,11 +1,11 @@
 [Unit]
 # senti-service.service
-Description=Senti Service
+Description=Senti template
 Documentation=https://github.com/senti-iot/senti-service/blob/master/README.md
 # After=network.target
 
 [Service]
-WorkingDirectory=/srv/nodejs/senti/services/service/production
+WorkingDirectory=/srv/nodejs/senti/services/template/production
 ExecStart=/usr/bin/node server.js
 Environment=NODE_PORT=3007
 Environment=NODE_ENV=production

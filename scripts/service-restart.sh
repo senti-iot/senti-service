@@ -2,9 +2,9 @@
 # chmod 700 api-restart.sh
 
 if [[ "$1" == "master" ]]; then
-	npm install --prefix /srv/nodejs/senti/services/service/production
-	systemctl restart senti-service.service
-	logtext=$( systemctl status senti-service-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
+	npm install --prefix /srv/nodejs/senti/services/template/production
+	systemctl restart senti-template.service
+	logtext=$( systemctl status senti-template-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
 	# Senti Slack Workspace
 	curl -X POST -H 'Content-type: application/json' --data '{
 	"blocks": [
@@ -12,7 +12,7 @@ if [[ "$1" == "master" ]]; then
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "Senti Service updated",
+				"text": "Senti template updated",
 				"emoji": true
 			}
 		},
@@ -48,9 +48,9 @@ if [[ "$1" == "master" ]]; then
 fi
 
 if [[ "$1" == "dev" ]]; then
-	npm install --prefix /srv/nodejs/senti/services/service/development
-	systemctl restart senti-service-dev.service
-	logtext=$( systemctl status senti-service-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
+	npm install --prefix /srv/nodejs/senti/services/template/development
+	systemctl restart senti-template-dev.service
+	logtext=$( systemctl status senti-template-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
 	# Senti Slack Workspace
 	curl -X POST -H 'Content-type: application/json' --data '{
 	"blocks": [
@@ -58,7 +58,7 @@ if [[ "$1" == "dev" ]]; then
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "Senti Service Dev updated",
+				"text": "Senti template Dev updated",
 				"emoji": true
 			}
 		},

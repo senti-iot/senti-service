@@ -2,24 +2,24 @@
 
 if [[ "$1" == "master" ]]; then
 	echo
-	echo Deploying Senti Data Broker $1 ...
+	echo Deploying Senti template $1 ...
 	rsync -r --quiet $2/ deploy@rey.webhouse.net:/srv/nodejs/senti/services/service/production
 	echo
-	echo Restarting Senti Data Broker service: $1 ...
-	ssh deploy@rey.webhouse.net "sudo /srv/nodejs/senti/services/service/production/scripts/service-restart.sh master $3"
+	echo Restarting Senti template service: $1 ...
+	ssh deploy@rey.webhouse.net "sudo /srv/nodejs/senti/services/template/production/scripts/service-restart.sh master $3"
 	echo
-	echo Deployment to Senti Data Broker $1 and restart done!
+	echo Deployment to Senti template $1 and restart done!
 	exit 0
 fi
 
 if [[ "$1" == "dev" ]]; then
 	echo
-	echo Deploying Senti Data Broker $1 ...
+	echo Deploying Senti template $1 ...
 	rsync -r --quiet $2/ deploy@rey.webhouse.net:/srv/nodejs/senti/services/service/development
 	echo
-	echo Restarting Senti Data Broker service: $1 ...
-	ssh deploy@rey.webhouse.net "sudo /srv/nodejs/senti/services/service/development/scripts/service-restart.sh dev $3"
+	echo Restarting Senti template service: $1 ...
+	ssh deploy@rey.webhouse.net "sudo /srv/nodejs/senti/services/template/development/scripts/service-restart.sh dev $3"
 	echo
-	echo Deployment to Senti Data Broker $1 and restart done!
+	echo Deployment to Senti template $1 and restart done!
 	exit 0
 fi
