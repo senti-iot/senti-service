@@ -13,7 +13,7 @@ if [[ "$1" == "master" ]]; then
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "Senti template updated",
+				"text": "Senti Template updated",
 				"emoji": true
 			}
 		},
@@ -36,11 +36,25 @@ if [[ "$1" == "master" ]]; then
 			}
 		},
 		{
+			"type": "divider"
+		},
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "System Log:",
+				"emoji": true
+			}
+		},
+		{
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
 				"text": "```'"$logtext"'```"
 			}
+		},
+		{
+			"type": "divider"
 		}
 	]
 }' $2
@@ -59,7 +73,7 @@ if [[ "$1" == "dev" ]]; then
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "Senti template Dev updated",
+				"text": "Senti Template updated",
 				"emoji": true
 			}
 		},
@@ -82,11 +96,25 @@ if [[ "$1" == "dev" ]]; then
 			}
 		},
 		{
+			"type": "divider"
+		},
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "System Log:",
+				"emoji": true
+			}
+		},
+		{
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
 				"text": "```'"$logtext"'```"
 			}
+		},
+		{
+			"type": "divider"
 		}
 	]
 }' $2
