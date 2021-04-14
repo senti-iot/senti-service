@@ -2,8 +2,9 @@
 # chmod 700 api-restart.sh
 
 if [[ "$1" == "master" ]]; then
-	npm install --prefix /srv/nodejs/senti/services/gateway/production
-	systemctl restart senti-gateway.service
+	npm install --prefix /srv/nodejs/senti/services/service/production
+	systemctl restart senti-service.service
+	logtext=$( systemctl status senti-service-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
 	# Senti Slack Workspace
 	curl -X POST -H 'Content-type: application/json' --data '{
 	"blocks": [
@@ -11,7 +12,7 @@ if [[ "$1" == "master" ]]; then
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "Senti Gateway updated",
+				"text": "Senti Service updated",
 				"emoji": true
 			}
 		},
@@ -29,8 +30,15 @@ if [[ "$1" == "master" ]]; then
 					"emoji": true
 				},
 				"value": "travis-link",
-				"url": "http://travis-ci.com/github/senti-iot/senti-gateway",
+				"url": "http://travis-ci.com/github/senti-iot/senti-service",
 				"action_id": "button-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "```'"$logtext"'```"
 			}
 		}
 	]
@@ -40,8 +48,9 @@ if [[ "$1" == "master" ]]; then
 fi
 
 if [[ "$1" == "dev" ]]; then
-	npm install --prefix /srv/nodejs/senti/services/gateway/development
-	systemctl restart senti-gateway-dev.service
+	npm install --prefix /srv/nodejs/senti/services/service/development
+	systemctl restart senti-service-dev.service
+	logtext=$( systemctl status senti-service-dev| sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g;' | sed -e 's/\(  \)//g;' )
 	# Senti Slack Workspace
 	curl -X POST -H 'Content-type: application/json' --data '{
 	"blocks": [
@@ -49,7 +58,7 @@ if [[ "$1" == "dev" ]]; then
 			"type": "header",
 			"text": {
 				"type": "plain_text",
-				"text": "Senti Gateway updated",
+				"text": "Senti Service Dev updated",
 				"emoji": true
 			}
 		},
@@ -67,8 +76,15 @@ if [[ "$1" == "dev" ]]; then
 					"emoji": true
 				},
 				"value": "travis-link",
-				"url": "http://travis-ci.com/github/senti-iot/senti-gateway",
+				"url": "http://travis-ci.com/github/senti-iot/senti-service",
 				"action_id": "button-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "```'"$logtext"'```"
 			}
 		}
 	]

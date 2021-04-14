@@ -1,23 +1,23 @@
 {
-	"name": "gateway",
+	"name": "service",
 	"version": "0.0.4",
 	"deprecated": false,
-	"description": "Senti Gateway service",
+	"description": "Senti Service service",
 	"main": "server.js",
 	"scripts": {
 		"test": "echo 'No Tests'"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/senti-iot/senti-gateway.git"
+		"url": "git+https://github.com/senti-iot/senti-service.git"
 	},
 	"keywords": [
 		"Senti.Cloud",
 		"Senti.IoT",
 		"Senti",
 		"IoT",
-		"Gateway",
-		"Micro Service Gateway",
+		"Service",
+		"Micro Service Service",
 		"NodeJS",
 		"Express",
 		"Micro Service"
@@ -29,9 +29,9 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/senti-iot/senti-gateway/issues"
+		"url": "https://github.com/senti-iot/senti-service/issues"
 	},
-	"homepage": "https://github.com/senti-iot/senti-gateway#readme",
+	"homepage": "https://github.com/senti-iot/senti-service#readme",
 	"dependencies": {
 		"apisauce": "^2.0.1",
 		"cli-table3": "^0.6.0",

@@ -11,7 +11,7 @@
 		"production": "3005",
 		"development": "3006"
 	},
-	"gateway": {
+	"service": {
 		"production": "3007",
 		"development": "3008"
 	},
