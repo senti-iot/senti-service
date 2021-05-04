@@ -66,5 +66,29 @@
 	"camro-backend": {
 		"production": "3035",
 		"development": "3036"
+	},
+	"senti-building-backend": {
+		"production": "3037",
+		"development": "3038"
+	},
+	"doc-cache": {
+		"production": "3039",
+		"development": "3040"
+	},
+	"analytics": {
+		"production": "3041",
+		"development": "3042"
+	},
+	"dataseries": {
+		"production": "3043",
+		"development": "3044"
+	},
+	"dsc": {
+		"production": "3045",
+		"development": "3046"
+	},
+	"lwm2m": {
+		"production": "3047",
+		"development": "3048"
 	}
 }
