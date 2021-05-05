@@ -90,5 +90,10 @@
 	"lwm2m": {
 		"production": "3047",
 		"development": "3048"
+	},
+	"microbizz": {
+		"production": "3049",
+		"development": "3050"
 	}
+
 }
