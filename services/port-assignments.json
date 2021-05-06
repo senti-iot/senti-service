@@ -94,6 +94,10 @@
 	"microbizz": {
 		"production": "3049",
 		"development": "3050"
+	},
+	"iotrace-gateway": {
+		"production": "3051",
+		"development": "3052"
 	}
 
 }
