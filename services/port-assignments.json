@@ -99,9 +99,13 @@
 		"production": "3051",
 		"development": "3052"
 	},
-	"custom": {
+	"utils": {
 		"production": "3053",
 		"development": "3054"
+	},
+	"custom": {
+		"production": "3055",
+		"development": "3056"
 	}
 
 }
