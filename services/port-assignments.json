@@ -98,6 +98,10 @@
 	"iotrace-gateway": {
 		"production": "3051",
 		"development": "3052"
+	},
+	"custom": {
+		"production": "3053",
+		"development": "3054"
 	}
 
 }
