@@ -106,6 +106,9 @@
 	"custom": {
 		"production": "3055",
 		"development": "3056"
-	}
-
+	},
+	"senti-device-configuration-backend": {
+		"production": "3057",
+		"development": "3058"
+	},
 }
