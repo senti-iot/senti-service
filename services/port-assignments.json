@@ -115,4 +115,8 @@
 		"production": "3059",
 		"development": "3060"
 	},
+	"comadan-gateway": {
+		"production": "3061",
+		"development": "3062"
+	},
 }
