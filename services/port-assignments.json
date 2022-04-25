@@ -119,9 +119,13 @@
 		"production": "3061",
 		"development": "3062"
 	},
-	"ecosocket": {
+	"wrc": {
 		"production": "3063",
 		"development": "3064"
+	},
+	"ecosocket": {
+		"production": "3065",
+		"development": "3066"
 	},
 
 }
