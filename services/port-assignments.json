@@ -119,4 +119,9 @@
 		"production": "3061",
 		"development": "3062"
 	},
+	"ecosocket": {
+		"production": "3063",
+		"development": "3064"
+	},
+
 }
