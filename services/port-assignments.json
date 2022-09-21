@@ -127,5 +127,9 @@
 		"production": "3065",
 		"development": "3066"
 	},
+	"firmware": {
+		"production": "3067",
+		"development": "3068"
+	},
 
 }
