@@ -131,5 +131,9 @@
 		"production": "3067",
 		"development": "3068"
 	},
+	"jt808": {
+		"production": "8090",
+		"development": ""
+	},
 
 }
