@@ -131,6 +131,10 @@
 		"production": "3067",
 		"development": "3068"
 	},
+	"mbtest": {
+		"production": "3069",
+		"development": "3070"
+	},
 	"jt808": {
 		"production": "8090",
 		"development": ""
